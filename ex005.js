@@ -3,8 +3,8 @@
 const prompt = require("prompt-sync")();
 
 const number = Number(prompt("Diga um número:"));
-const post = number + 1;
-const ant = number - 1;
+const after = number + 1;
+const before = number - 1;
 
-console.log(`Número posterior é: ${post}`);
-console.log(`Número anterior é: ${ant}`);
+console.log(`Número posterior é: ${after}`);
+console.log(`Número anterior é: ${before}`);

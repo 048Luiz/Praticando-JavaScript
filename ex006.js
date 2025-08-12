@@ -2,6 +2,6 @@
 
 const PromptSync = require("prompt-sync")();
 const pizza = PromptSync("Qual o valor da pizza?");
-const clientes = PromptSync("Quantos clientes vão pagar?");
-const calc = pizza / clientes;
+const customers = PromptSync("Quantos clientes vão pagar?");
+const calc = pizza / customers;
 console.log(`Valor de cada cliente: R$:${calc.toFixed(2)}`);
