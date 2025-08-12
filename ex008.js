@@ -8,12 +8,12 @@ const nota4 = Number(PromptSync("Digite a quarta nota:"));
 
 let calc = (nota1 + nota2 + nota3 + nota4) / 4;
 let int = Math.floor(calc);
-let dec = calc - int;
+let dec = (calc - int).toFixed(2);
 if (dec <= 0.4) {
-  calc = Math.round(calc);
+  calc = int;
 } else if (dec >= 0.6) {
-  calc = Math.round(calc);
-} else if (dec === 5) {
+  calc = int + 1;
+} else {
   calc = int + 0.5;
 }
 
